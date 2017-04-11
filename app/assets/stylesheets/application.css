@@ -1,0 +1,305 @@
+/*
+ * This is a manifest file that'll be compiled into application.css, which will include all the files
+ * listed below.
+ *
+ * Any CSS and SCSS file within this directory, lib/assets/stylesheets, vendor/assets/stylesheets,
+ * or any plugin's vendor/assets/stylesheets directory can be referenced here using a relative path.
+ *
+ * You're free to add application-wide styles to this file and they'll appear at the bottom of the
+ * compiled file so the styles you add here take precedence over styles defined in any other CSS/SCSS
+ * files in this directory. Styles in this file should be added after the last require_* statement.
+ * It is generally better to create a new file per style scope.
+ *
+ *= require font-awesome
+ *= require_tree ../../../vendor/assets/stylesheets/.
+ *= require_tree .
+ *= require_self
+ */
+
+
+
+*,
+*::before,
+*::after {
+	text-decoration: none;
+	padding: 0;
+	margin: 0;
+	box-sizing: border-box;
+}
+
+body {
+	position: relative;
+	overflow-x: hidden;
+	margin: 0;
+	font-family: 'Franklin Gothic Medium', arial, sans-serif, serif, Gothic;
+}
+
+h2,
+h3,
+p {
+	letter-spacing: 0.3rem;
+}
+
+.fa {
+	color: #fafafa;
+}
+
+.clearfix::after {
+	content: "."; 
+	display: block; 
+	height: 0; 
+	font-size: 0;	
+	clear: both; 
+	visibility: hidden;
+}
+
+.wrapper {
+	position: relative;
+	width: 100%;
+}
+
+.container {
+	width: 80%;
+	margin: 0 auto;
+}
+
+.sec-ttl {
+	display: inline-block;
+	font-size: 60px;
+	text-align: center;
+	width: 100%;
+	margin: 100px auto;
+}
+
+/* side-menu css*/
+#menu {
+	position: fixed;
+	top: 0;
+	right: -300px;
+	width: 300px;
+	height: 100%;
+	background: #212121;
+	text-align: center;
+	overflow: scroll;
+	-webkit-overflow-scrolling: touch;
+}
+
+#menu-wrapper {
+	margin: 50px;
+}
+
+#menu li {
+	list-style: none;
+	font-size: 32px;
+	color: #fafafa;
+	margin: 100px 0;
+}
+
+#menu li:hover,
+.close-btn:hover {
+	opacity: 0.7;
+	cursor: pointer;
+}
+
+.menu-header {
+	height: 80px;
+}
+
+.close-btn {
+	cursor: pointer;
+	font-size: 36px;
+	line-height: 80px;
+}
+
+.menu-link {
+	border-bottom: solid 1px #fafafa;
+
+}
+
+.menu-ls:visited {
+	color: #fafafa;
+} 
+
+.sns-icon {
+	width: 100px;
+	height: 100px;
+	border-radius: 50%;
+}
+
+.instagram {
+	background: #fafafa;
+}
+
+/* side-menu fin. */
+
+/* header css */
+#header {
+	position: fixed;
+	z-index: 999;
+	width: 100%;
+	height: 80px;
+	background: #d50000;
+}
+
+.header-container {
+	height: 80px;
+}
+
+#header-logo {
+	padding-top: 15px;
+}
+
+#header-logo:hover {
+	opacity: 0.8;
+}
+
+.header-menu {
+	display: inline-block;
+	float: right;
+	height: 80px;
+	line-height: 80px;
+	font-size: 36px;
+	cursor: pointer;
+	color: #fafafa;
+}
+
+.header-menu:hover {
+	opacity: 0.8;
+}
+/* header fin. */
+
+/* scroll btn */
+/*.scroll-btn {
+	position: fixed;
+	right: 10%;
+	z-index: 999;
+	font-size: 36px;
+	color: #d50000;
+}
+
+.up-btn {
+	bottom: 100px;
+}
+
+.down-btn {
+	bottom: 30px;
+}*/
+/* scroll btn fin */
+
+/* main css */
+#main {
+	display: block;
+	width: auto;
+	padding-top: 80px;
+}
+
+#main-visual {
+	display: block;
+	width: 100%;
+}
+/* main fin. */
+
+/* about css */
+#about {
+	display: block;
+	margin-bottom: 100px;
+}
+
+#prf-photo {
+	width: 200px;
+	height: 200px;
+	border-radius: 50%;
+}
+
+#prf {
+	float: right;
+	display: block;
+	width: 70%
+}
+
+#prf p {
+	display: inline-block;
+	font-size: 0.9rem;
+}
+/* about fin.*/
+
+/* values css*/
+#values {
+	display: block;
+	margin-bottom: 100px;
+}
+
+.values-ttl {
+	font-size: 1.2rem;
+	font-weight: 500;
+	text-align: center;
+	margin: 50px auto 100px;
+}
+
+#values-txt {
+	font-size: 1rem;
+	text-align: center;
+	line-height: 1.5rem;
+}
+/* values fin. */
+
+/* to blog css */
+#to-blg {
+	display: block;
+	width: 200px;
+	border-radius: 5px;
+	margin: 350px auto;
+}
+
+#to-blg:hover {
+	opacity: 0.8;
+} 
+/* to blog fin. */
+
+/* footer section */
+#footer {
+	display: block;
+	width: 100%;
+	background: #d50000;
+}
+
+#footer p {
+	text-align: center;
+	color: #fafafa;
+	padding: 25px;
+}
+/* footer fin.*/
+
+/* RWD css */
+@media all and (max-width: 1024px) {
+	/* about css */
+	#prf-photo {
+		display: block;
+		margin: 0 auto;
+	}
+
+	#prf {
+		float: none;
+		width: 100%;
+		margin-top: 100px;
+	}
+}
+
+@media all and (max-width: 640px) {
+	#header-logo {
+		width: 200px;
+		padding-top: 25px;
+	}
+}
+
+/* RWD fin.*/
+
+/* blog-contents */
+.blog-contents {
+	text-align: center;
+	padding-top: 100px;
+	min-height: 1000px;
+	margin: 0 auto;
+}
+
+/* blog-contents fin. */

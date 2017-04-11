@@ -1,0 +1,8 @@
+<div class="container">
+	<div class="blog-contents">
+		<%= link_to "ブログ投稿", new_blog_path %>
+		<%= link_to "登録内容編集", edit_admin_registration_path %>
+		<%= link_to "パスワード変更", edit_admin_password_path%>
+		<%= link_to "ログアウト", destroy_admin_session_path, method: :delete %>
+	</div>
+</div>

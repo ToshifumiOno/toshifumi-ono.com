@@ -1,0 +1,8 @@
+<section id="blog" class="blog-contents">
+	<div class="container">
+		<% @blogs.each do |blog| %>
+			<%= link_to blog.title, blog_path(blog) %>
+			<%= blog.content.html_safe %>
+		<% end %>
+	</div>
+</section>

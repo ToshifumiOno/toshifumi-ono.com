@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="ja">
+  <head>
+    <title>Toshifumi Ono.com</title>
+    <%= csrf_meta_tags %>
+    <meta charset="utf-8">
+    <meta name="keywords" content="小野隼史, 小野, 隼史,Toshifumi Ono, Toshifumi, Ono, 浦和, 練馬, 中央大学, 総合政策学部, Infratop,　インフラトップ, 劣等感, コンプレックス, うつ, 鬱, プログラミング, デザイン, 教育, 人材, 人財, 人材育成, 能力開発, ソーシャルスキル, キャリア, コーチング, コンサルティング, カウンセリング, メンタル, グリット, Grit">
+	<meta name="discription" content="1993年10月2日生まれ。埼玉県浦和市（現・さいたま市）出身。中央大学総合政策学部政策科学科に在学中。4歳になる直前に東京都練馬区に移住する。幼い頃から劣等感を強く持って育つ。浪人の末大学受験に失敗した結果、人生の底を経験する。しかし、周囲のお陰で立ち直り、2015年に中央大学総合政策学部に入学する。再受験の過程で人の幸せに貢献することが自分の幸せだと強く感じるようになり、それを人の能力や可能性から実現しようと志すようになる。中央大学入学前から、IT教育系スタートアップにジョインし、約2年勤める。現在はWebプログラミング・デザインを学びつつ、人の可能性を最大限に引き出すにはどうすればよいか模索している。生粋の浦和レッズサポーター。">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <%= stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track': 'reload' %>
+    <%= javascript_include_tag 'application', 'data-turbolinks-track': 'reload' %>
+  </head>
+
+  <body>
+    <nav id="menu">
+      <div class="menu-header">
+          <i id="close-btn" class="fa fa-times close-btn" aria-hidden="true"></i>
+        </div>
+      <div id="menu-wrapper">
+        <ul>
+          <li class="menu-link"><%= link_to "Top", root_path, class: 'menu-ls' %></li>
+          <li class="menu-link"><%= link_to "Blog", blogs_path, class: 'menu-ls' %></li>
+          <li><a href="https://twitter.com/ToshifumiOno" target="_blank" ><%= image_tag 'twitter.png', class: 'sns-icon' %></a></li>
+          <li><a href="https://www.facebook.com/toshifumi.ono08" target="_blank"><%= image_tag 'facebook.png', class: 'sns-icon' %></a></li>
+          <li><a href="https://www.instagram.com/ono_toshi1002/" target="_blank"><%= image_tag 'instagram.png', class: 'sns-icon instagram' %></a></li>
+          <li><a href="https://www.wantedly.com/users/10368027" target="_blank"><%= image_tag 'wantedly.png', class: 'sns-icon' %></a></li>
+          <li><a href="http://line.me/ti/p/PzbXTuvWd7" target="_blank"><%= image_tag 'line.png', class: 'sns-icon' %></a></li>
+        </ul>
+      </div>
+    </nav>
+    <!-- header section -->
+    <header id="header">
+      <div class="container header-container">
+        <%= link_to root_path do %>    
+          <%= image_tag 'toshifumi_ono.png', id: "header-logo" %>
+        <% end %>
+        <i id="menu-btn" class="fa fa-bars header-menu" aria-hidden="true"></i>
+      </div>
+    </header>
+    <!-- header fin. -->
+    <!-- scroll btn -->
+    <!-- <div class="container">
+      <i class="fa fa-chevron-circle-up scroll-btn up-btn" aria-hidden="true"></i>
+      <i class="fa fa-chevron-circle-down scroll-btn down-btn" aria-hidden="true"></i>
+    </div> -->
+      <!-- scroll btn fin. -->
+    <%= yield %>
+    <!-- footer section -->
+    <footer id="footer">
+      <p>&copy;Toshifumi Ono All Rights Reserved.</p>
+    </footer>
+    <!-- footer fin. -->
+  </body>
+</html>

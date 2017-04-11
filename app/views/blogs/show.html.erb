@@ -1,0 +1,10 @@
+<section id="blogs" class="blog-contents">
+	<div class="container">
+		<%= @blog.title %>
+		<%= @blog.content.html_safe%>
+		<% if admin_signed_in? %>
+			<%= link_to "編集", edit_blog_path(@blog) %>
+			<%= link_to "削除", blogs_path(@blog), method: :delete, :deta => {confirm: '本当に削除？'} %>
+		<% end %>
+	</div>
+</section>

@@ -1,0 +1,38 @@
+<div class="wrapper clearfix">
+	<!-- main section -->
+	<section id="main" class="clearfix">
+		<%= image_tag 'main_visual.jpg', id: 'main-visual' %>
+	</section>
+	<!-- main fin. -->
+	<!-- about section -->
+	<section id="about" class="clearfix">
+		<div class="container">
+			<h2 class="sec-ttl">About</h2>
+			<div class="row clearfix">
+				<%= image_tag 'toshi.jpg', id: 'prf-photo' %>
+				<div id="prf">
+					<p>1993年10月2日生まれ。埼玉県浦和市（現・さいたま市）出身。中央大学総合政策学部政策科学科に在学中。<br>4歳になる直前に東京都練馬区に移住する。幼い頃から劣等感を強く持って育つ。<br>浪人の末大学受験に失敗した結果、人生の底を経験する。しかし、周囲のお陰で立ち直り、2015年に中央大学総合政策学部に入学する。<br>再受験の過程で人の幸せに貢献することが自分の幸せだと強く感じるようになり、それを人の能力や可能性から実現しようと志すようになる。中央大学入学前から、IT教育系スタートアップにジョインし、約2年勤める。現在はWebプログラミング・デザインを学びつつ、人の可能性を最大限に引き出すにはどうすればよいか模索している。生粋の浦和レッズサポーター。</p>
+				</div>
+			</div>
+		</div>
+	</section>
+	<!-- about fin. -->
+	<!-- values section -->
+	<section id="values" class="clearfix">
+		<div class="container clearfix">
+			<h2 class="sec-ttl">Values</h2>
+			<h3 class="values-ttl">“自分の力で人生をコントロールする”</h3>
+			<h3 class="values-ttl">“人に貢献し、社会に価値を与える”</h3>
+			<p id="values-txt">私の人生における、大きな軸です。<br>これを大切に日々を過ごしています。<br>しかしながら、まだまだ未熟者で至らないことだらけです。<br>これからも着実に、自身のビジョンを実現できるように邁進します。<br>何卒、よろしくお願い致します！！</p>
+		</div>
+	</section>
+	<!-- values fin. -->
+		<!-- to_blog section -->
+	<div class="container">
+		<%= link_to blogs_path do %>
+			<%= image_tag 'to_blog.png', id:'to-blg' %>
+		<% end %>	 
+	</div>
+	<!-- to_blog fin. -->
+</div>	
+	
